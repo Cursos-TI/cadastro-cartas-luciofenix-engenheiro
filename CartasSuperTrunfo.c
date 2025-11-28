@@ -54,7 +54,7 @@ int main() {
     scanf("%d", &pontosTuristicos1);
 
     // Entrada de dados da Carta 2
-    printf("\n=== Cadastro da Carta 2 ===\n");
+    printf("=== Cadastro da Carta 2 ===\n");
 
     printf("Estado (A-H): ");
     scanf(" %c", &estadoCarta2);
@@ -100,5 +100,5 @@ int main() {
 
     return 0;
 
-    
+
 } 

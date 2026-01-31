@@ -8,6 +8,7 @@
 // Data: 28/11/2025
 // Data: 21/01/2026
 // data :30/01/2026
+// Data: 21/01/2026
 
 
 
@@ -15,7 +16,7 @@ int main() {
 
     // ================= Carta 1 =================
     char estadoCarta1;
-    char codigoCarta1[4];
+    char codigoCarta1[10];
     char nomeCidade1[50];
     unsigned long int populacao1;
     float area1;
@@ -27,9 +28,10 @@ int main() {
     float pibPerCapita1;
     float superPoder1;
 
+
     // ================= Carta 2 =================
     char estadoCarta2;
-    char codigoCarta2[4];
+    char codigoCarta2[10];
     char nomeCidade2[50];
     unsigned long int populacao2;
     float area2;
@@ -97,9 +99,9 @@ int main() {
     densidadePopulacional2 = (float)populacao2 / area2;
     pibPerCapita2 = (pib2 * 1000000000.0f) / (float)populacao2;
 
-   
     // ====== Exibição dos dados ======
-    printf("\n=== Cartas cadastradas ===\n\n");
+    printf("\n=== Cartas cadastradas ===\n");
+
 
     printf("\nCarta 1:\n");
     printf("Estado: %c\n", estadoCarta1);
@@ -111,6 +113,7 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
     printf("Densidade populacional: %.2f hab/km²\n", densidadePopulacional1);
     printf("PIB per Capita: %.2f Reais\n\n", pibPerCapita1);
+    
 
 
     printf("\nCarta 2:\n");
@@ -121,8 +124,10 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de Reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
-     printf("Densidade populacional: %.2f hab/km²\n", densidadePopulacional2);
+    printf("Densidade populacional: %.2f hab/km²\n", densidadePopulacional2);
     printf("PIB per Capita: %.2f Reais\n\n", pibPerCapita2);
+   
+    
 
 
     // ======= Super Poder =======
@@ -142,8 +147,8 @@ int main() {
       pibPerCapita2 +
       (1.0f / densidadePopulacional2);
 
-    // ====== Comparações de Cartas ===\n\n");
-    printf("\n=== Comparaçãon de Cartas ===\n\n");
+    // ====== Comparações de Cartas ===
+    printf("\n=== Comparação de Cartas ===\n\n");
 
     printf("População: Carta 1 venceu (%d)\n", populacao1 > populacao2);
     printf("Área: Carta 1 venceu (%d)\n", area1 > area2);
@@ -152,7 +157,7 @@ int main() {
 
 
     // Regra especial meno densidade vence 
-    printf("Densidade Populacinal: Carta 1 venceu (%d)\n",
+    printf("Densidade Populacional: Carta 1 venceu (%d)\n",
            densidadePopulacional1 < densidadePopulacional2);
 
     printf("PIB per Capita: carta 1 venceu (%d)\n", pibPerCapita1 > pibPerCapita2);
